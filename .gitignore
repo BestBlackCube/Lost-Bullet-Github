@@ -1,3 +1,14 @@
+# Unity project is inside "Lost Bullet Unity" folder
+Lost Bullet Unity/[Ll]ibrary/
+Lost Bullet Unity/[Tt]emp/
+Lost Bullet Unity/[Oo]bj/
+Lost Bullet Unity/[Bb]uild/
+Lost Bullet Unity/[Bb]uilds/
+Lost Bullet Unity/[Ll]ogs/
+Lost Bullet Unity/[Uu]ser[Ss]ettings/
+Lost Bullet Unity/[Mm]emoryCaptures/
+Lost Bullet Unity/[Rr]ecordings/
+
 # This .gitignore file should be placed at the root of your Unity project directory
 #
 # Get latest from https://github.com/github/gitignore/blob/main/Unity.gitignore
