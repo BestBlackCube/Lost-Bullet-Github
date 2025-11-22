@@ -1,4 +1,4 @@
-# Field-Map Auto Create 0.1.2v
+# Field-Map Auto Create 0.1.2v - 2025-11-25
 ### 이 브랜치는 자동 조립식 맵을 개발하는 브랜치 입니다.
 
 ## 기능 설명
@@ -21,10 +21,12 @@ AutoMap.cs 스크립트 파일을 Empty/GameObject에 컴포넌트로 넣게 된
 ### AutoMap.cs
 - 지상 필드맵과 하늘 필드맵을 구별하여 Count로 나누어 계산한다.
     - FieldAutoSetup()
+    - [new.cs]: https://github.com/BestBlackCube/Lost-Bullet-Github/blob/Field-Map/Lost%20Bullet%20Unity/Assets/Map-Folder/Script/AutoMap.cs
 
 ### MapControl.cs
 - Field 오브젝트에 들어있는 여러가 필드맵을 난수로 정해진 필드 코드값을 불러와 생성한다.
     - CreateAllMap()
+    - [new.cs]: https://github.com/BestBlackCube/Lost-Bullet-Github/blob/Field-Map/Lost%20Bullet%20Unity/Assets/Map-Folder/Script/MapControl.cs
 
 ## [개발 단계]
 ### 개발 된 기능
