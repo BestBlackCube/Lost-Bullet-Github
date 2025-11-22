@@ -20,6 +20,8 @@ public class AutoMap : MonoBehaviour
     public struct Field_Object
     {
         public string ElementName;
+        public int Count_FrontField;
+        public int Count_SkyField;
         public GameObject[] Field;
     }
     [Header("Field List")]
@@ -72,12 +74,25 @@ public class AutoMap : MonoBehaviour
 
         for (int i = 0; i < MapCount; i++)
         {
+            // 구조체 이름과 FieldA-Z의 자식 갯수 대입
             InGameField_Object[i].ElementName = AllMap.GetChild(i).name;
             InGameField_Object[i].Field = new GameObject[AllMap.GetChild(i).childCount];
             for (int j = 0; j < InGameField_Object[i].Field.Length; j++)
             {
+                // 자식 이름 ASCII 기준 65-90까지 작동
+                string CreateName;
+                CreateName = "Field" + ((char)(64 + i)) + "Ground"; // Field + A-Z + Ground -> FieldAGround
+
+                // n자식 FieldMap 오브젝트를 구조체에 대입
                 Transform ChildField = AllMap.GetChild(i).transform;
                 InGameField_Object[i].Field[j] = ChildField.GetChild(j).gameObject;
+
+                if(InGameField_Object[i].Field[j].name.Contains(CreateName))
+                    InGameField_Object[i].Count_FrontField++;
+
+                CreateName = "Field" + ((char)(64 + i)) + "SkyGround"; // Field + A-Z + SkyGround -> FieldASkyGround
+                if (InGameField_Object[i].Field[j].name.Contains(CreateName))
+                    InGameField_Object[i].Count_SkyField++;
             }
         }
     }
