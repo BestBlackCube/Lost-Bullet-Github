@@ -18,11 +18,11 @@ AutoMap.cs 스크립트 파일을 Empty/GameObject에 컴포넌트로 넣게 된
         - 자식 오브젝트 (GameObject[])
 
 ## 기능 추가 내용
-### [AutoMap.cs](https://github.com/BestBlackCube/Lost-Bullet-Github/commit/cb4c7d3d7a818fdf34df71ec69785e1d1370673b#diff-16086e27b3578a17f5e0af794353e61ca9d8f788380da5e9d7dbd0a9f5905802)
+### [AutoMap.cs](https://github.com/BestBlackCube/Lost-Bullet-Github/blob/cb4c7d3d7a818fdf34df71ec69785e1d1370673b/Lost%20Bullet%20Unity/Assets/Map-Folder/Script/AutoMap.cs)
 - 지상 필드맵과 하늘 필드맵을 구별하여 Count로 나누어 계산한다.
     - FieldAutoSetup()
 
-### [MapContorl.cs](https://github.com/BestBlackCube/Lost-Bullet-Github/commit/cb4c7d3d7a818fdf34df71ec69785e1d1370673b#diff-aebf9fbe8a371b62b47ab144458ecf3ef45cad66761c0d961a938355ae691585)
+### [MapContorl.cs](https://github.com/BestBlackCube/Lost-Bullet-Github/blob/cb4c7d3d7a818fdf34df71ec69785e1d1370673b/Lost%20Bullet%20Unity/Assets/Map-Folder/Script/MapControl_Script.cs)
 - Field 오브젝트에 들어있는 여러가 필드맵을 난수로 정해진 필드 코드값을 불러와 생성한다.
     - CreateAllMap()
 
