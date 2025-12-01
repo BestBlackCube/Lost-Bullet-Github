@@ -9,7 +9,8 @@
 - 다양한 임무 시스템
 - 제작 시스템
 - 생존 전략
-
+## 브랜치 버전 업데이트
+[Player-Character 브랜치 변경 사항](ChangeLog.md)
 ## 기술 스택
 - Unity6
 - C#
