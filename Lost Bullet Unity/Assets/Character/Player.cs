@@ -1,6 +1,7 @@
 using System;
 using UnityEditor.Callbacks;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
@@ -20,6 +21,7 @@ public class Player : MonoBehaviour
     public float jumpStamina = 20f;     //점프할때 스태미나 소모값
     public float staminaRegen = 15f;    //스태미나 회복 값 15
     public float staminaDelay = 3f;     //스태미나 회복 시간
+    public Slider staminaSlider;
 
     private Rigidbody2D rb;
     private bool isGrounded = false;    //점프 조건
@@ -36,6 +38,8 @@ public class Player : MonoBehaviour
         animator = GetComponent<Animator>();
         sprite = GetComponent<SpriteRenderer>();
         currnetStamina = maxStamina;                //시작 시 스태미나 최대치
+
+        if (staminaSlider != null) staminaSlider.maxValue = maxStamina;
     }
 
     void FixedUpdate()
@@ -119,7 +123,10 @@ public class Player : MonoBehaviour
             }
         }
 
-        Debug.Log($"current Stamina : {currnetStamina:F1} / {maxStamina}");
+        if(staminaSlider != null) staminaSlider.value = currnetStamina;
+        
+        
+        //Debug.Log($"current Stamina : {currnetStamina:F1} / {maxStamina}");    
     }
 
     private void OnDrawGizmosSelected()
